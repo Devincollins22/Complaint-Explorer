@@ -17,14 +17,14 @@ public class ComplaintEmbeddingMergeTest {
     @Test
     public void testEmbeddingMergeByComplaintId() throws Exception {
         // Load complaints
-        InputStream csvStream = getClass().getResourceAsStream("/complaints_sample_1_30.csv");
+        InputStream csvStream = getClass().getResourceAsStream("/complaints_test_1_30.csv");
         assertNotNull(csvStream, "CSV file not found");
         List<Complaint> complaints = new CsvToBeanBuilder<Complaint>(
                 new InputStreamReader(csvStream, StandardCharsets.UTF_8)
         ).withType(Complaint.class).build().parse();
 
         // Load embeddings
-        InputStream jsonlStream = getClass().getResourceAsStream("/embeddings_sample_1_30.jsonl");
+        InputStream jsonlStream = getClass().getResourceAsStream("/embeddings_test_1_30.jsonl");
         assertNotNull(jsonlStream, "JSONL file not found");
         Map<Long, double[]> embeddings = EmbeddingLoader.loadEmbeddings(jsonlStream);
 

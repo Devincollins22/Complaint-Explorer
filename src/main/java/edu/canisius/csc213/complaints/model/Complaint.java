@@ -2,7 +2,7 @@ package edu.canisius.csc213.complaints.model;
 
 import com.opencsv.bean.CsvBindByName;
 
-import java.time.LocalDate;
+
 import java.util.Arrays;
 
 public class Complaint {

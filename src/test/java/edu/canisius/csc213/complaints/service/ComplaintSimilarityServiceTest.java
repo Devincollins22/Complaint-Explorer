@@ -17,8 +17,8 @@ public class ComplaintSimilarityServiceTest {
     @BeforeAll
     public static void setup() throws Exception {
         complaints = ComplaintLoader.loadComplaintsWithEmbeddings(
-                "/complaints_sample_1_30.csv",
-                "/embeddings_sample_1_30.jsonl"
+                "/complaints_test_1_30.csv",
+                "/embeddings_test_1_30.jsonl"
         );
         similarityService = new ComplaintSimilarityService(complaints);
     }

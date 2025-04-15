@@ -1,7 +1,6 @@
 package edu.canisius.csc213.complaints.model;
 
 import com.opencsv.bean.CsvToBeanBuilder;
-import edu.canisius.csc213.complaints.model.Complaint;
 import org.junit.jupiter.api.Test;
 
 import java.io.InputStreamReader;
