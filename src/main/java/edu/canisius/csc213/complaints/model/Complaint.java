@@ -1,9 +1,8 @@
 package edu.canisius.csc213.complaints.model;
 
-import com.opencsv.bean.CsvBindByName;
-
-
 import java.util.Arrays;
+
+import com.opencsv.bean.CsvBindByName;
 
 public class Complaint {
 
